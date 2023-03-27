@@ -61,7 +61,7 @@ else:
 
 
 # Define the API endpoint and payload
-API_TOKEN=st.secrets["API_KEY"]
+API_TOKEN=st.secrets["api_key"]
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 API_URL = "https://api-inference.huggingface.co/models/"+models[lang]['model_names'][modelopt]
 
