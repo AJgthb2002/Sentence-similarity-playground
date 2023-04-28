@@ -94,10 +94,10 @@ def model_scores(model_name, source, target1, target2, target3):
 if st.button('Compute', type="primary"):     
 
 # Display the similarity score on the main page
-    if modelopt in ['MahaSBERT-STS', 'MahaSBERT','HindSBERT-STS']:
-        similarity_result=query(input_data)  
-    else:    
-        similarity_result= model_scores(models[lang]['model_names'][modelopt], sourcetext, text1, text2, text3)
+#     if modelopt in ['MahaSBERT-STS', 'MahaSBERT','HindSBERT-STS']:
+    similarity_result=query(input_data)  
+#     else:    
+#         similarity_result= model_scores(models[lang]['model_names'][modelopt], sourcetext, text1, text2, text3)
     if sourcetext!="":
         st.markdown(f'<span style="font-size:24px">Similarity scores: </span>', unsafe_allow_html=True)
         col1, col2 = st.columns([3, 1])
